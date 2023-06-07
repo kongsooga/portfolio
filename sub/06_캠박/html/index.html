@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캠박</title>
+    <link href="css/main.css" rel="stylesheet" />
+    
+    <script>
+        window.onload = function(){
+            let best = document.getElementsByClassName('best')[0];
+            let menuBtn = best.getElementsByTagName('li');
+            let menuList = best.getElementsByClassName('list');
+
+            for(let i = 0; i< menuBtn.length; i++) {
+                menuBtn[i].onclick = function() {
+                    menuList[0].classList.remove('on');
+                    menuList[1].classList.remove('on');
+
+                    menuList[i].classList.add('on');
+
+                    menuBtn[0].classList.remove('on');
+                    menuBtn[1].classList.remove('on');
+
+                    menuBtn[i].classList.add('on');
+                }
+            }//for end
+            let openIcon = document.getElementsByClassName('search_open');
+            let closeIcon = document.getElementsByClassName('close');
+            let searchMenu = document.getElementsByClassName('menu_inner');
+
+            openIcon.onclick = function () {
+                if (searchMenu.style.display == 'none') {
+                    searchMenu.style.display = 'block';
+                }
+            }
+        }//window.onload end
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+
+            <h1>
+                <a href="#">
+                    <img src="img/icon/캠박로고 1.png" alt="캠박" />
+                </a>
+
+                <div class="search_open">
+                    <img src="img/icon/검색.png" alt="검색" />
+                </div><!-- .search_open end -->
+            </h1>
+            <p>차박여행</br>
+                어디로 떠나볼까요?</p>
+        </div><!-- .title end -->
+
+        <div class="menu_inner">
+
+            <nav>
+                <div class="search">
+                    <div>
+                        <input type="text" placeholder="주소나 키워드를 검색해보세요." />
+                        <label class="close"><img src="img/icon/닫기.png" alt="닫기" /></label>
+                    </div>
+                </div><!--.search end  -->
+                <ul class="search_inner">
+                    <h2>지역</h2>
+                    <a href="#">
+                        <li>서울</li>
+                        <li>대구 . 경북</li>
+                        <li>강원</li>
+                        <li>경기 . 인천</li>
+                        <li>대전 . 충청</li>
+                        <li>제주</li>
+                        <li>부산 . 경남</li>
+                        <li>광주 . 전라</li>
+                    </a>
+                </ul><!-- .search_inner -->
+            </nav>
+        </div><!-- .menu_inner end -->
+    </header>
+    <section class="cont01">
+        <div class="list">
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지1 1.jpg" alt="서울" /></a>
+                </figure>
+                <p>서울</p>
+            </div><!-- .item end -->
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지2 1.jpg" alt="경기/인천" /></a>
+                </figure>
+                <p>경기/인천</p>
+            </div><!-- .item end -->
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지3 1.jpg" alt="강원도" /></a>
+                </figure>
+                <p>강원도</p>
+            </div><!-- .item end -->
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지4 1.jpg" alt="경남/부산" /></a>
+                </figure>
+                <p>경남/부산</p>
+            </div><!-- .item end -->
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지5 1.jpg" alt="경북/대구" /></a>
+                </figure>
+                <p>경북/대구</p>
+            </div><!-- .item end -->
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지6 1.jpg" alt="충청/대전" /></a>
+                </figure>
+                <p>충청/대전</p>
+            </div><!-- .item end -->
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지7 1.jpg" alt="전라/광주" /></a>
+                </figure>
+                <p>전라/광주</p>
+            </div><!-- .item end -->
+            <div class="item">
+                <figure>
+                    <a href="#"><img src="img/국내여행지8 1.jpg" alt="제주도" /></a>
+                </figure>
+                <p>제주도</p>
+            </div><!-- .item end -->
+        </div><!-- .list end -->
+    </section><!-- .cont01 end -->
+    <section class="event">
+        <div class="inner">
+            <div class="item">
+                <a href="#">
+                    <figure>
+                        <img src="img/이벤트1.jpg" alt="이벤트1" />
+                    </figure>
+                </a>
+            </div><!-- .item end -->
+            <div class="item">
+                <a href="#">
+                    <figure>
+                        <img src="img/이벤트 2.jpg" alt="이벤트2" />
+                    </figure>
+                </a>
+            </div><!-- .item end -->
+        </div><!-- .inner end -->
+        <div class="btn">
+            <button class="prev"><img src="img/icon/왼쪽.png" alt="왼쪽 화살표" /></button>
+            <button class="next"><img src="img/icon/오른쪽.png" alt="오른쪽 화살표" /></button>
+        </div><!-- .btn end -->
+    </section><!-- .event end -->
+    <section class="best">
+        <div class="inner">
+            <h3>테마별 장소</h3>
+            <ul class="best_menu">
+                <li class="on">차박지</li>
+                <li>캠핑장</li>
+                <li>불멍</li>
+                <li>물멍</li>
+            </ul><!--.cont02_menu end  -->
+            <div class="list on">
+                <div class="item">
+                    <figure>
+                        <img src="img/차박1 1.jpg" alt="차박1" />
+                    </figure>
+                    <div class="text">
+                        <h4>산너미 목장</h4>
+                        <P>강원 평창군 미탄면 회동리 803</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/차박2 1.jpg" alt="차박1" />
+                    </figure>
+                    <div class="text">
+                        <h4>노루벌캠핑장</h4>
+                        <P>대전 서구 흑석동 804</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/차박3 1.jpg" alt="차박1" />
+                    </figure>
+                    <div class="text">
+                        <h4>한탄강관광지오토캠핑장</h4>
+                        <P>경기 연천군 전곡읍 전곡리 696-16</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/차박4 1.jpg" alt="차박1" />
+                    </figure>
+                    <div class="text">
+                        <h4>진위천유원지 캠핑장</h4>
+                        <P>경기 평택시 진위면 봉남리 432-1</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+            </div><!-- .list end /차박지-->
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/캠핑1 2.jpg" alt="캠핑1" />
+                    </figure>
+                    <div class="text">
+                        <h4>산너미 목장</h4>
+                        <P>강원 평창군 미탄면 회동리 803</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/캠핑2 3.jpg" alt="캠핑2" />
+                    </figure>
+                    <div class="text">
+                        <h4>노루벌캠핑장</h4>
+                        <P>대전 서구 흑석동 804</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/캠핑3 1.jpg" alt="캠핑3" />
+                    </figure>
+                    <div class="text">
+                        <h4>한탄강관광지오토캠핑장</h4>
+                        <P>경기 연천군 전곡읍 전곡리 696-16</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/캠핑4 2.jpg" alt="캠핑4" />
+                    </figure>
+                    <div class="text">
+                        <h4>진위천유원지 캠핑장</h4>
+                        <P>경기 평택시 진위면 봉남리 432-1</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+            </div><!-- .list end /캠핑장 -->
+        </div><!-- .inner end -->
+    </section><!-- .cont01 end -->
+    <section class="cont02">
+        <div class="inner">
+            <h3>BEST 장소</h3>
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/best1 1.jpg" alt="베스트1" />
+                    </figure>
+                    <div class="text">
+                        <h4>옥계 해수욕장 캠핑장</h4>
+                        <P>강원 강릉시 옥계면 금진리 799-12</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/best2 1.jpg" alt="베스트2" />
+                    </figure>
+                    <div class="text">
+                        <h4>대진항</h4>
+                        <P>강원 동해시 대진동 196-6</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/best3 1.jpg" alt="베스트3" />
+                    </figure>
+                    <div class="text">
+                        <h4>사천진해변</h4>
+                        <P>강원 강릉시 사천면 사천진리 266-5</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/best4 1.jpg" alt="베스트4 " />
+                    </figure>
+                    <div class="text">
+                        <h4>화진포해변</h4>
+                        <P>강원 고성군 현내면 초도리</P>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </section><!-- .cont02 end -->
+    <section class="cont03">
+        <div class="inner">
+            <h2>관련후기</h2>
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/후기1.jpg" alt="후기1" />
+                    </figure>
+                    <div>
+                        <P>서해 근교 궁평리 해수욕장 차박</P>
+                    </div>
+
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/후기2.jpg" alt="후기2" />
+                    </figure>
+                    <div>
+                        <P>캠핑 준비물 리스트&차박 장소</P>
+                    </div>
+
+                </div><!-- .item end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/후기3.jpg" alt="후기3" />
+                    </figure>
+                    <div>
+                        <P>올 여름에 가기 좋은 경기도 캠핑장</P>
+                    </div>
+                </div><!-- .item end -->
+                <div class="link">
+                    <span>후기 더 보기</span>
+                    <a href="#"><img src="img/icon/아래화살표.png" alt="화살표" /></a>
+                </div>
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </section><!-- .cont03 end -->
+    <div class="bottom_menu">
+        <div class="menu">
+            <ul>
+                <li><a href="#"><img src="img/icon/홈.png" alt="홈" /></a>
+                    <P>홈</P>
+                </li>
+                <li><a href="#"><img src="img/icon/장소찾기.png" alt="장소찾기" /></a>
+                    <P>장소찾기</P>
+                </li>
+                <li><a href="#"><img src="img/icon/커뮤니티.png" alt="커뮤니티" /></a>
+                    <P>커뮤니티</P>
+                </li>
+                <li><a href="#"><img src="img/icon/마이페이지.png" alt="마이페이지" /></a>
+                    <P>마이페이지</P>
+                </li>
+            </ul>
+        </div><!-- .menu end -->
+    </div><!-- .bottom_menu end -->
+</body>
+
+</html>
