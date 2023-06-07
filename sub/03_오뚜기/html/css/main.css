@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TheJamsil5Bold';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+
+}
+
+.inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+
+}
+
+.inner a img {
+    height: 115px;
+    width: 119px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.inner .menu {
+    display: flex;
+
+
+}
+
+.inner .menu .left_gnb {
+    display: flex;
+    margin-top: 100px;
+}
+
+.inner .menu .left_gnb li {
+    margin: 0 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.inner .menu .right_gnb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inner .menu .right_gnb li img {
+    width: 212px;
+    height: 46px;
+    margin: 72px 0 0 80px;
+}
+
+.inner .menu .search li img {
+    width: 25px;
+    height: 24px;
+    margin: 95px 0 0 65px;
+}
+
+.main_visual div img {
+    width: 100%;
+    border-top: 12px solid #fef100;
+    margin-top: 10px;
+}
+
+
+.cont01 h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #ff0000;
+    margin-bottom: 50px;
+
+}
+
+.cont01 .list {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+
+}
+
+.cont01 .list .item {
+
+    width: 300px;
+
+}
+
+.cont01 .list .item figure {
+    width: 100%;
+    text-align: center;
+
+
+
+}
+
+.cont01 .list .item figure img {
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+
+}
+
+.cont01 .list .item figure p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.cont01 .list .item figure strong {
+    font-size: 20px;
+
+
+}
+
+.cont01 .link {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.cont01 .link h3 {
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 0 70px;
+    line-height: 60px;
+    border-radius: 29px;
+    text-align: center;
+}
+
+.cont02 {
+    background-color: #d5d5d1;
+}
+
+.cont02 .inner {
+    width: 1280px;
+
+}
+
+.cont02 .title {
+    padding-top: 50px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.cont02 .title img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.cont02 .title h4 {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.cont02 .inner .list {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    flex-wrap: wrap;
+}
+
+.cont02 .inner .list .item {
+    width: 626px;
+    height: 345px;
+    margin-bottom: 80px;
+
+}
+
+.cont02 .inner .list .item a {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cont02 .inner .list .item figure {
+    width: 408px;
+    height: 100%;
+
+}
+
+.cont02 .inner .list .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 5px 5px 3px #969696;
+}
+
+.cont02 .inner .list .item div {
+    width: 216px;
+    display: block;
+    line-height: 1.3;
+    padding-left: 30px;
+
+}
+
+.cont02 .inner .list .item div p {
+    font-size: 22px;
+    color: #646464;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.cont02 .inner .list .item div h4 {
+    font-size: 24px;
+
+}
+
+.cont03 {
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.cont03 .title {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.cont03 .title h2 {
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 40px;
+    border: 2px solid #ff0000;
+    width: 325px;
+    line-height: 66px;
+    border-radius: 33px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cont03 .title p {
+    font-size: 22px;
+    margin-bottom: 48px;
+}
+
+.cont03 .inner {
+    width: 100%;
+    margin-bottom: 120px;
+
+
+}
+
+.cont03 .inner .list .item {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont03 .inner .list .item figure {
+
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+
+}
+
+.cont03 .inner .list .item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cont04 {
+    background-color: #ebebeb;
+
+    padding: 120px 0;
+}
+
+.cont04 .inner {
+    width: 1280px;
+
+}
+
+.cont04 .inner div {
+    display: block;
+    border-radius: 20px;
+    position: relative;
+}
+
+.cont04 .inner div h2 {
+    font-size: 45px;
+    color: #fff;
+    text-shadow: 5px 5px 5px #333;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.cont04 .inner div img {
+    width: 408px;
+    height: 382px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+footer .inner {
+    width: 100%;
+    background-color: #d5d5d1;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #969696;
+}
+
+footer .inner .footer_log {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+footer .inner .footer_log h3 {
+    font-size: 24px;
+    margin-right: 50px;
+
+}
+
+footer .inner .footer_log ul li:nth-child(4) {
+    margin-right: 290px;
+}
+
+footer .inner .footer_log ul {
+    display: flex;
+
+}
+
+footer .inner .footer_log ul li {
+    font-size: 18px;
+    color: #333;
+    margin: 0 37px;
+
+}
+footer .inner .footer_log .logo a {
+margin-left: 15px;
+}
+
+footer .inner .footer_log .logo a img {
+    width: 100%;
+    height: 46px;
+    margin-bottom: -18px;
+   
+
+}
+
+footer .footer_bottom {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .footer_bottom li img {
+    width: 226px;
+    height: 78px;
+    margin-top: 30px;
+
+}
+
+footer .footer_bottom ul li {
+    font-size: 16px;
+    color: #333;
+    margin-top: 30px;
+    line-height: 0;
+    font-weight: 300;
+}
+
+footer .footer_bottom ul p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
